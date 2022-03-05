@@ -1,6 +1,6 @@
 import csv
 def write_into_csv(info_list):
-    with open('../Music/student.info.csv', 'a', newline ='') as Csv_File:
+    with open('student.info.csv', 'a', newline ='') as Csv_File:
          writer = csv.writer(Csv_File)
          if Csv_File.tell() == 0:
              writer.writerow(["Name","Age","Roll_Number","Email_id"])
